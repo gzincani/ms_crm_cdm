@@ -2,11 +2,10 @@
 
 types:
   # Exported AccountTypes
-  Account: !include ./Account.cdm.json
+  Account:
     type: !include ./Account.cdm.json
-  AccountContact:
-    type: AccountTypes.AccountContact
-    example: !include ./examples/AccountContactExample.json
+  Contact:
+    type: !include ./Contact.cdm.json
   AccountContactRole:
     type: AccountTypes.AccountContactRole
     example: !include ./examples/AccountContactRoleExample.json
