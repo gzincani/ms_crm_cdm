@@ -1,6 +1,18 @@
 #%RAML 1.0 Library
 
-uses /Contact.cdm.json
-uses /Lead.cdm.json
-uses /Account.cdm.json
-
+types:
+  # Exported AccountTypes
+  Account:
+    type: Account
+  AccountContact:
+    type: AccountTypes.AccountContact
+    example: !include ./examples/AccountContactExample.json
+  AccountContactRole:
+    type: AccountTypes.AccountContactRole
+    example: !include ./examples/AccountContactRoleExample.json
+  AccountPartner:
+    type: AccountTypes.AccountPartner
+    example: !include ./examples/AccountPartnerExample.json
+  Lead:
+    type: AccountTypes.Lead
+    example: !include ./examples/LeadExample.json
