@@ -2,8 +2,8 @@
 
 types:
   # Exported AccountTypes
-  Account:
-    type: Account
+  Account: !include ./Account.cdm.json
+    type: !include ./Account.cdm.json
   AccountContact:
     type: AccountTypes.AccountContact
     example: !include ./examples/AccountContactExample.json
