@@ -10,9 +10,8 @@ types:
     type: !include ./Lead.cdm.json
   AccountLeads:
     type: !include ./AccountLeads.cdm.json
-  ContaLead:
-    type: AccountTypes.Lead
-    example: !include ./examples/LeadExample.json
-
-  Customer: !include /exchange_modules/org.mule.examples/accelerator-cim-library/1.1.1/jsonSchemas/CustomerSchema.json
+  ContactLead:
+    type: !include ./ContactLeads.cdm.json
+  Customer: 
+    type: !include /exchange_modules/org.mule.examples/accelerator-cim-library/1.1.1/jsonSchemas/CustomerSchema.json
   Lead: !include /exchange_modules/org.mule.examples/accelerator-cim-library/1.1.1/jsonSchemas/LeadSchema.json
